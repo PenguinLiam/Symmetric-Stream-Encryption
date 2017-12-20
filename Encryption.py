@@ -17,7 +17,6 @@ https://google.github.io/styleguide/pyguide.html
 # ====== Imports (Python Native Modules and My Program Modules) ====== #
 
 from base64 import b64encode
-import Variables as v
 import random
 import sys
 import os
@@ -97,7 +96,8 @@ class Encryption:
         encrypted message.
 
         Returns:
-            Returns the identified modulus and message to the decrypt function'''
+            Returns the identified modulus and message to the decrypt function
+        '''
         self.cipherText = []
         for i in range(len(message)):
             key_ = ord(self.password[i % len(self.password)])
